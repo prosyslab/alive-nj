@@ -8,6 +8,10 @@ cd Python-2.7.18
 make
 sudo make install
 
+# This ensures a subprocess with a minimal environment can find python2.7.
+# Such processes are spanwed by OCaml subprocess API.
+sudo ln -s /usr/local/bin/python2.7 /usr/bin/python2.7
+
 python2.7 -V | grep "2.7.18"
 
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
