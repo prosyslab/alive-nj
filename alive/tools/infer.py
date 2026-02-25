@@ -1,4 +1,4 @@
-import argparse, sys, os, logging, logging.config
+import argparse, sys, os, logging, logging.config, itertools
 import alive.precondition.inference as I
 import alive.language as L
 from alive import config, error
